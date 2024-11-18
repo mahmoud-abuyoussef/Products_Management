@@ -1,0 +1,56 @@
+:host,
+:root {
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+}
+
+.fa-solid {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+}
+
+.fa-file-pen:before {
+  content: "\f31c";
+}
+
+.fa-magnifying-glass-chart:before {
+  content: "\e522";
+}
+
+.fa-file-pen:before {
+  content: "\f31c";
+}
+
+.fa-plus:before {
+  content: "\2b";
+}
+
+.fa-x::before {
+  content: "\58";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.ttf) format("truetype");
+}

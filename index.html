@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Product Managemanet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-59</title>
+    <link rel="stylesheet" href="css/fontawsome.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="analysis" onclick="analysis()">Analysis <i class="fa-solid fa-magnifying-glass-chart"></i></button>
+      <div class="container__form" id="form">
+        <div class="form__container">
+          <i class="fa-solid fa-x form__close" id="form-close" onclick="formClose()"></i>
+          <label for="username">User Name</label>
+          <input class="input__data form__input" type="text" placeholder="Username" id="username" />
+          <label for="password">Password</label>
+          <input class="input__data form__input" type="password" placeholder="Password" id="password" />
+          <button onclick="loginForm()">Submit</button>
+        </div>
+      </div>
+      <input class="input__data" type="text" placeholder="Enter Your Product Name" id="product-name" autofocus />
+      <input class="input__data" type="text" placeholder="Enter Your Product Category" id="product-category" />
+      <input class="input__data" type="number" placeholder="Enter Your Product QTY" id="product-qty" />
+      <input class="input__data" type="number" placeholder="Enter Your Product Price" id="product-price" />
+      <div class="btns__container">
+        <div class="btns">
+          <button onclick="addProducts();" class="add__button" id="add">Add Product <i class="fa-solid fa-plus"></i></button>
+          <div id="update-product" class="update__button"></div>
+          <button onclick="deleteAllProduct();" class="delete__button" id="delete-all-product">Delete Product</button>
+        </div>
+        <div class="search__container">
+          <input class="data__search" type="text" id="search" placeholder="Search Any Product by Name" onkeyup="searchProducts()" />
+          <button onclick="searchProducts()">Search</button>
+        </div>
+      </div>
+      <div class="table__container">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Product Category</th>
+              <th>Product QTY</th>
+              <th>Product Price</th>
+              <th>Total Product Price</th>
+              <th>Date & Time</th>
+              <th class="update"><i class="fa-solid fa-file-pen" id="update-icon"></i></th>
+              <th class="delete"><i class="fa-solid fa-trash" id="delete-icon"></i></th>
+            </tr>
+          </thead>
+          <tbody id="insert-data"></tbody>
+          <tfoot id="total"></tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- ======================================= JS FILES =================================== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
